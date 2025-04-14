@@ -7,5 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Comprovante extends Model
 {
-    use HasFactory;
+    protected $table='comprovante';
+    protected $fillable = ['horas', 'ativadade'];
 }

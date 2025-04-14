@@ -7,5 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Curso extends Model
 {
-    use HasFactory;
+    protected $table='Curso';
+    protected $fillable = ['nome', 'sigla', 'total_horas'];
 }
