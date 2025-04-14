@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('turmas', function (Blueprint $table) {
             $table->id();
-            $table->integer('an');
+            $table->integer('ano');
             $table->softDelete();
             $table->timestamps();
         });
