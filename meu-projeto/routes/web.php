@@ -5,7 +5,7 @@ use App\Http\Controllers\PessoaController;
 
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('wecome');
 });
 
 Route::get('/pessoas', [PessoaController::class, 'index'])->name('pessoas.index');
