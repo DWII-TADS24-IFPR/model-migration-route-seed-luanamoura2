@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('status');
             $table->string('comentario');
             $table->float('horas_out');
-            $table->softDelete();
+            $table->softDeletes();
             $table->timestamps();
         });
     }

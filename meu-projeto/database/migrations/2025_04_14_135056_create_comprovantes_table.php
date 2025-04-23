@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->float('horas');
             $table->string('atividade');
-            $table->softDelete();
+            $table->softDeletes();
             $table->timestamps();
         });
     }

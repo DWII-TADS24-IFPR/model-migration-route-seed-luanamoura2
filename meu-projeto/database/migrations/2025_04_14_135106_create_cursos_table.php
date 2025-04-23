@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('nome');
             $table->string('sigla');
             $table->float('total_horas');
-            $table->softDelete();
+            $table->softDeletes();
             $table->timestamps();
         });
     }
