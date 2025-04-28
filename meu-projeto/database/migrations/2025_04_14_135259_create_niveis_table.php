@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('niveis', function (Blueprint $table) {
+        Schema::create('nivels', function (Blueprint $table) {
             $table->id();
             $table->string('nome');
             $table->softDeletes();
@@ -24,6 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('niveis');
+        Schema::dropIfExists('nivels');
     }
 };
